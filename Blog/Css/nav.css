@@ -1,0 +1,68 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #444;
+}
+.blog-nav-center {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.blog-nav-right {
+  display: flex;
+}
+.blog-nav-right img {
+  max-width: 3rem;
+  height: auto;
+  border-radius: 3rem;
+}
+/* The sidepanel menu */
+.sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0% ; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  /* The sidepanel links */
+  .sidepanel a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn { 
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 20px;
+  }
+  /* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    color: #fff;
+    background-color: #111;
+    padding: 0rem 20px;
+}
+.openbtn:hover {
+    background-color: rgb(36, 8, 219);
+    border-radius: 20px 40px;
+}
