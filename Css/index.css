@@ -15,7 +15,7 @@ header a{
 }
 
 main{
-    height: auto; /* Changed from 100vh to auto */
+    height: 100vh; /* Changed from auto to 100vh for desktop */
     max-height: fit-content;
     background-color: gray;
     display: grid;
@@ -62,6 +62,7 @@ footer p {
 
 @media only screen and (max-width: 1024px) {
     main {
+        height: auto; /* Set height to auto for smaller screens */
         grid-template-columns: 1fr;
         grid-template-areas: 
         "section"
