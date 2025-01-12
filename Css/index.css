@@ -49,9 +49,6 @@ section{
     box-shadow: 0px 5px 5px 5px rgb(36, 36, 37);
 }
 
-
-
-
 footer{
     text-align: center;
     background-color: gray;
@@ -61,6 +58,45 @@ footer{
 
 footer p {
     margin: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "section"
+        "aside";
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 1vh;
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "section"
+        "aside";
+    }
+    aside, section {
+        margin: 0.5vw;
+        padding: 0.5vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    aside, section {
+        margin: 0.5vw;
+        padding: 0.5vw;
+        font-size: 0.9rem;
+    }
+    footer {
+        padding: 1rem 0.5rem;
+    }
 }
 
 @media only screen and (max-width: 650px) {
