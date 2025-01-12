@@ -57,12 +57,12 @@ section {
 footer {
     text-align: center;
     background-color: gray;
-    padding: 2rem 0.5rem; /* Added top padding to ensure footer is not covered */
+    padding: .2vw 0.5vw; /* Added top padding to ensure footer is not covered */
     color: #000;
 }
 
 footer p {
-    margin: 1rem;
+    margin: .5vw;
 }
 
 @media only screen and (max-width: 1024px) {
