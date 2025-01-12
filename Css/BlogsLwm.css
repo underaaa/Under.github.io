@@ -1,0 +1,177 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1d2026;
+    height: 100%;
+}
+.header{
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    background-color: #111;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #444;
+
+}
+.blog-nav-center {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.blog-nav-right {
+  display: flex;
+}
+.blog-nav-right img {
+  max-width: 3rem;
+  height: auto;
+  border-radius: 3rem;
+}
+/* The sidepanel menu */
+.sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0 ; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn { 
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 20px;
+  }
+  /* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    color: #fff;
+    background-color: #111;
+    padding: 0rem 20px;
+}
+.openbtn:hover {
+    background-color: rgb(36, 8, 219);
+    border-radius: 20px 40px;
+}
+main {
+  display: flex;
+  color: #fff;
+  min-width: 100%;
+  background-color: #1d2026;
+  float: left;
+  
+}
+section{
+  padding: 1rem;
+  flex-direction: column;
+  background-color: #1d2026;
+  flex-basis: 80%;
+}
+details {
+  border: 1px solid #aaa;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  
+}
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  list-style: none;
+  padding: 1em;
+}
+details[open] {
+  
+}
+details[open] summary {
+  border-bottom: .1rem solid #aaa;
+  margin-bottom: 0.5em;
+  
+}
+summary:hover{
+  background-color: #444;
+  
+}
+.Things {
+  border-radius: 1rem;
+  background-color: #111;
+  padding: 1rem;
+}
+aside{
+  display: flex;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  float: right;
+  background-color: #1d2026;
+}
+.Side{
+ padding-top: 2rem;
+}
+.About-Me{
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.Socials{
+  background-color: #111;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.Socials ul li {
+
+  list-style-type:none;
+}
+.Socials ul li a{
+  text-decoration:none;
+  color: #fff;
+}
+.Socials ul li a:hover{
+  color: aqua;
+}
+footer{
+  position: relative;
+  /* negative value of footer height */
+  height: 5vh;
+  clear: both;
+}
+.copyright{
+  text-align: center;
+  background: #ddd;
+  margin-top: auto;
+}
