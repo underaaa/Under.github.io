@@ -15,7 +15,7 @@ header a{
 }
 
 main{
-    height: 100vh;
+    height: auto; /* Changed from 100vh to auto */
     max-height: fit-content;
     background-color: gray;
     display: grid;
@@ -55,7 +55,7 @@ section{
 footer{
     text-align: center;
     background-color: gray;
-    padding: .5rem;
+    padding: 2rem 0.5rem; /* Added top padding to ensure footer is not covered */
     color: #000
 }
 
