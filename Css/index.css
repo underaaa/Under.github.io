@@ -91,8 +91,8 @@ footer p {
         "aside";
     }
     aside, section {
-        margin: 0.5vw;
-        padding: 0.5vw;
+        margin: 0.8vw;
+        padding: 1vw;
     }
 }
 
@@ -101,12 +101,12 @@ footer p {
         font-size: 1.5rem;
     }
     aside, section {
-        margin: 0.5vw;
-        padding: 0.5vw;
-        font-size: 0.9rem;
+        margin: 0.8vw;
+        padding: 1vw;
+        font-size: 1vw;
     }
     footer {
-        padding: 1rem 0.5rem;
+        padding: 1vw 0.5vw;
     }
 }
 
