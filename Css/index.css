@@ -15,7 +15,7 @@ header {
     background-color: rgb(63, 47, 78);
     text-align: center;
     padding: 2vh;    
-    text-shadow: 2px 2px 2px gray;
+    text-shadow: 2px 2px 2px rgb(176, 95, 184);
 }
 
 header a {
