@@ -4,12 +4,13 @@
 
 html, body {
     height: 100%;
+    font-size: 1.5vw;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    font-size: 1.5vw;
+    
 }
 
 header {
