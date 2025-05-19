@@ -20,46 +20,37 @@
 
 
 main{
-    height: 100vh;
-    max-height: fit-content;
-    background-color: gray;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-row: 1fr;
-    grid-template-areas: 
-    "section aside"
-    ;
-    
+    display:grid;
+    height:auto;
+    min-height:100vh;
+    grid-template-columns:max-content max-content;
+    grid-template-rows:auto;
+    grid-template-areas:
+        "section aside"
+        ;
 }
-
 aside{
-    grid-area: aside;
-    background-color: #000;
-    color: white;
-    padding: 1vw;
-    margin: 1vw;
-    border-radius: 1vw;
-    word-wrap: break-word;
-    box-shadow: 0px 5px 5px 5px rgb(36, 36, 37);
+    grid-area:aside;
+    background-color:#000;
+    color:white;
+    padding:1vw;
+    margin:1vw;
+    border-radius:1vw;
+    word-wrap:break-word;
+    box-shadow:0px 5px 5px 5px rgb(36,36,37);
 }
-
 section{
-    grid-area: section;
-    background-color: #000;
-    color: white;
-    padding: 1vw;
-    margin: 1vw;
-    border-radius: 1vw;
-    word-wrap: break-word;
-    box-shadow: 0px 5px 5px 5px rgb(36, 36, 37);
+    grid-area:section;
+    background-color:#000;
+    color:white;
+    padding:1vw;
+    margin:1vw;
+    border-radius:1vw;
+    word-wrap:break-word;
+    box-shadow:0px 5px 5px 5px rgb(36,36,37);
 }
-
 footer{
-    text-align: center;
-    background-color: gray;
-    margin-top: 4vh;
-    padding: 1vh;
-    color: #000;
+    margin-top:0vh;
 }
 
 @media only screen and (max-width: 650px) {
@@ -114,4 +105,4 @@ footer{
     footer{
         padding: 1vh;
     }
-}   
+}
