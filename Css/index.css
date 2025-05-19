@@ -20,14 +20,15 @@
 
 
 main{
-    display:grid;
-    height:auto;
-    min-height:100vh;
-    grid-template-columns:max-content max-content;
-    grid-template-rows:auto;
-    grid-template-areas:
-        "section aside"
-        ;
+    height: 100vh;
+    max-height: fit-content;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 1fr;
+    grid-template-areas: 
+    "section aside"
+    ;
 }
 aside{
     grid-area:aside;
@@ -50,8 +51,13 @@ section{
     box-shadow:0px 5px 5px 5px rgb(36,36,37);
 }
 footer{
-    margin-top:0vh;
+    text-align: center;
+    background-color: gray;
+    margin-top: 4vh;
+    padding: 1vh;
+    color: #000;
 }
+
 
 @media only screen and (max-width: 650px) {
     main{
