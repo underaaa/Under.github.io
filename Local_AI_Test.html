@@ -61,6 +61,8 @@
         let food = {};
         let dx = gridSize;
         let dy = 0;
+        let lastDx = dx;
+        let lastDy = dy;
         let score = 0;
         let gameInterval;
         let gameSpeed = 100;
@@ -86,18 +88,21 @@
             snake = [{x: 5 * gridSize, y: 5 * gridSize}];
             dx = gridSize;
             dy = 0;
+            lastDx = dx;
+            lastDy = dy;
             score = 0;
             scoreElement.textContent = score;
             placeFood();
             
             // Set up key listener for initial press
             waitingForKeyPress = true;
-            document.addEventListener('keydown', function(event) {
-                if (waitingForKeyPress && event.key.startsWith('Arrow')) {
-                    waitingForKeyPress = false;
-                    gameInterval = setInterval(update, gameSpeed);
-                }
-            });
+        }
+
+        function handleInitialKeyPress(event) {
+            if (waitingForKeyPress && event.key.startsWith('Arrow')) {
+                waitingForKeyPress = false;
+                gameInterval = setInterval(update, gameSpeed);
+            }
         }
 
         function update() {
@@ -107,8 +112,8 @@
             const head = {x: snake[0].x + dx, y: snake[0].y + dy};
 
             // Check collision with walls
-            if (head.x >= canvas.width || head.x < 0 || head.y >=
-canvas.height || head.y < 0) {
+            if (head.x > canvas.width - gridSize || head.x < 0 || 
+                head.y > canvas.height - gridSize || head.y < 0) {
                 gameOver();
                 return;
             }
@@ -133,6 +138,8 @@ canvas.height || head.y < 0) {
                 snake.pop(); // Remove tail
             }
 
+            lastDx = dx;
+            lastDy = dy;
             draw();
         }
 
@@ -174,20 +181,21 @@ gridSize
 
         // Handle keyboard input
         document.addEventListener('keydown', handleKeyPress);
+        document.addEventListener('keydown', handleInitialKeyPress);
 
         function handleKeyPress(event) {
             switch(event.key) {
                 case 'ArrowUp':
-                    if (dy === 0) { dx = 0; dy = -gridSize; }
+                    if (lastDy === 0) { dx = 0; dy = -gridSize; }
                     break;
                 case 'ArrowDown':
-                    if (dy === 0) { dx = 0; dy = gridSize; }
+                    if (lastDy === 0) { dx = 0; dy = gridSize; }
                     break;
                 case 'ArrowLeft':
-                    if (dx === 0) { dx = -gridSize; dy = 0; }
+                    if (lastDx === 0) { dx = -gridSize; dy = 0; }
                     break;
                 case 'ArrowRight':
-                    if (dx === 0) { dx = gridSize; dy = 0; }
+                    if (lastDx === 0) { dx = gridSize; dy = 0; }
                     break;
             }
         }
