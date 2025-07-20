@@ -24,3 +24,5 @@ document.addEventListener("DOMContentLoaded", function() {
     screenWidth = window.innerWidth;
   });
 });
+
+

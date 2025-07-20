@@ -49,7 +49,18 @@ nav {
   /* When you mouse over the navigation links, change their color */
   .sidepanel a:hover {
     color: #f1f1f1;
+    animation: bounce 0.6s cubic-bezier(.68,-0.55,.27,1.55);
+    will-change: transform;
   }
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  20%  { transform: translateY(-18px); }
+  40%  { transform: translateY(0); }
+  60%  { transform: translateY(-10px); }
+  80%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
   /* Position and style the close button (top right corner) */
   .sidepanel .closebtn { 
     position: absolute;
