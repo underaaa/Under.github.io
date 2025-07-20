@@ -1,0 +1,133 @@
+* {
+    margin: 0%;
+}
+
+.Socials ul{
+    list-style-type: none;
+    padding: 5%;
+}
+
+.Socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.Socials a:hover{
+    color: blueviolet;
+}
+
+
+main{
+    height: 100vh;
+    max-height: fit-content;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 1fr;
+    grid-template-areas: 
+    "section aside"
+    ;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #000;
+    color: white;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 1vw;
+    word-wrap: break-word;
+    box-shadow: 0px 5px 5px 5px rgb(36, 36, 37);
+}
+
+section{
+    grid-area: section;
+    background-color: #000;
+    color: white;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 1vw;
+    word-wrap: break-word;
+    box-shadow: 0px 5px 5px 5px rgb(36, 36, 37);
+}
+
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    list-style: none;
+    padding: 1em;
+    justify-content: center;
+}
+
+section h3{
+    text-align: center;
+    color: white;
+    padding-bottom: .5vh;
+    padding-top: .5vh;
+}
+
+section h2{
+    text-align: center;
+    color: white;
+    padding-bottom: .5vh;
+    padding-top: .5vh;
+}
+
+aside{
+    text-decoration: none;
+    color: white;
+}
+
+details a{
+    padding: 1vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+} 
+a:hover {
+    color: blueviolet;
+}
+
+footer{
+    text-align: center;
+    background-color: gray;
+    padding: 1vh;
+    color: #000;
+}
+
+@media only screen and (max-width: 650px) {
+    main{
+        grid-template-columns: auto;
+        max-height: max-content;
+        min-height: 100vh;
+        grid-template-rows: max-content auto max-content;
+        grid-template-areas: 
+        "aside"
+        "section"
+        "footer"
+        ;
+    }
+
+    aside{
+        grid-area: aside;
+    }
+    section{
+        grid-area: section;
+    }
+    footer{
+        grid-area: footer;
+    }
+    main{
+        height: max-content;
+    }
+    footer{
+        margin-top: 0vh;
+    }
+    footer{
+        padding: 1vh;
+    }   
+}
