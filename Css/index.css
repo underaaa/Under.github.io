@@ -20,7 +20,6 @@
 
 
 main{
-    height: 100vh;
     max-height: fit-content;
     background-color: gray;
     display: grid;
@@ -61,7 +60,6 @@ footer{
     main{
         grid-template-columns: auto;
         max-height: max-content;
-        min-height: 100vh;
         grid-template-rows: max-content auto max-content;
         grid-template-areas: 
         "aside"
@@ -100,13 +98,13 @@ footer{
     footer{
         grid-area: footer;
     }
-    main{
-        height: max-content;
-    }
     footer{
         margin-top: 0vh;
     }
     footer{
+        padding: 1vh;
+    }
+}
         padding: 1vh;
     }
 }
