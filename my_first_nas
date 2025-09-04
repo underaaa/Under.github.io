@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://underaaa.github.io/Under.github.io/Css/Blog_template.css">
+    <link rel="stylesheet" href="https://underaaa.github.io/Under.github.io/Css/nav.css">
+    <link rel="stylesheet" href="https://underaaa.github.io/Under.github.io/Css/header.css">
+    <title>Under's_main</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Underlife Website</h1>
+        </a>
+    </header>
+
+    <nav>
+        <div id="mySidepanel" class="sidepanel">
+            <!-- close button -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <!-- In side the nav that is hidden tell open this is reused on many pages and uses javascript a little to keep it hidden and able to be responsive on its own -->
+                <li><a href="https://underaaa.github.io/Under.github.io/Blog.html">Blog</a></li>
+                <li><a href="https://underaaa.github.io/Under.github.io/plans.html">Plans</a></li>
+                <li><a href="https://underaaa.github.io/Under.github.io/tech_skills.html">Tech Skills</a></li>
+            </ul>
+        </div>
+        <div class="blog-nav-left-sp">
+            <button class="openbtn" onclick="openNav()">&#9776;</button> <!-- this is the nav hamburger bottom -->
+        </div>
+    </nav>
+
+    <main>
+        <aside>
+            <!-- This is for the side bar and with how this site is we will keep it on all pages to keep it consistent -->
+            <article>
+                <!-- This is the about me section. This is on the right side of the site at most times unless user is on mobile -->
+                <h2>About Me</h2>
+                <p>I’m 19 years old and my name is Jacob smith. I love technology and love to try new things like this year I plan to build this site and try to work in VR/MR after I get the quest 3. I like to share things that I do and want to get a job in I.T. Rn I’m upgrading a high school class to get the needed requirement for a computer science class in a local college or university.</p>
+            </article>
+
+            <br>
+
+            <div class="Socials">
+                <h2>Socials</h2>
+                <ul>
+                    <!-- This is Socials section all of them are links that need to be updated -->
+                    <li><a href="https://bsky.app/profile/underleftlife.bsky.social">BlueSky</a></li>
+                    <li><a href="https://github.com/underaaa?tab=overview&from=2023-09-01&to=2023-09-26">GitHub</a></li>
+                    <li>Still thinking…</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section>
+            <article>
+                <h2>I build myself a temp nas</h2>
+                <p>This nas is only temp for now tell I get new hardware for a proper setup. I wanted to build this NAS. I'm using it now because I had a 2TB NVME laying around and this was a way I could use it better than just using it as a linux drive for my laptop.</p>
+                <h2>The setup of this NAS</h2>
+                <p>The start of building out my nas was first going to be a lenovo SFF PC that was just chilling in my closet. The problem that came from that was that the ram or the stability was making the ZFS Health just have lots of errors. So I just went to use my lenovo t14 gen 1 that I was not using for the time frame.</p>
+                <h2>What am I using on this NAS</h2>
+                <p>The apps are crafty, dockage, tailscale, jellyfin, immich, and navidrome for music. I’m also using it to have a personal smb share for files that I can back up easily and get a backup of things I used to keep on usb’s. With jellyfin my household uses it and I use my dvd ripping setup to get movies we own on it. I hope to get a blu-ray ripper so I can get our blurays saved too.</p>
+                <h2>What is the plan for the system to replace it when I do that?</h2>
+                <p>I want to get a headless booting motherboard with a ryzen cpu with at least 32gb of ram. For storage I want to get a case that has hot swapping and be able to get redundancy. I would also like to get an arc card or a nVidia card for transcoding.</p>
+                <h2>I want to make this NAS have a stable network when leaving the house network.</h2>
+                <p>For now I have my NAS be connected to a switch that connects to the main router with a basic wireless bridge. This is not the best setup but it works for now but when I get to it I want to get the wired setup and have its own switch to have my PC’s connect to it without stressing the main router. </p>
+            </article>
+        </section>
+    </main>
+    <footer>@Underlife__</footer>
+</body>
+<script src="https://underaaa.github.io/Under.github.io/JS/index.JS"></script>
+</html>
